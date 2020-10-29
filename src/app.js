@@ -20,8 +20,14 @@ app.set('views', './src/views');
 
 const router = express.Router();
 app.use('/.netlify/functions/app', router);
+
 router.get('/', (req, res) => {
-  const blognames = fs.readFileSync('./blogs/blognames.txt').toString().split('\n');
+  let blognames = '';
+  try {
+    blognames = fs.readFileSync('./blogs/blognames.txt').toString().split('\n');
+  } catch (err) {
+    blognames = '';
+  }
   res.render('home', { blognames });
 });
 
