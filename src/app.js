@@ -18,12 +18,14 @@ app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
 app.set('views', './src/views');
 
-app.get('/', (req, res) => {
+const router = express.Router();
+app.use('/.netlify/functions/app', router);
+router.get('/', (req, res) => {
   const blognames = fs.readFileSync('./blogs/blognames.txt').toString().split('\n');
   res.render('home', { blognames });
 });
 
-app.get('/blog/:filename', (req, res) => {
+router.get('/blog/:filename', (req, res) => {
   const { filename } = req.params;
   const blog = new Blog(path.join(__dirname, `../blogs/${filename}.txt`).toString(), filename);
   blog.loadBlog().then(() => {
