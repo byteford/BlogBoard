@@ -17,7 +17,7 @@ const hbs = exphbs.create({
 app.set('views', `${process.env.LAMBDA_TASK_ROOT}/views`);
 app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
-app.set('views', './src/views');
+app.set('views', `${process.env.LAMBDA_TASK_ROOT}/views`);
 
 const router = express.Router();
 app.use('/.netlify/functions/app', router);
