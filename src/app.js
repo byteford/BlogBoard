@@ -14,7 +14,7 @@ const hbs = exphbs.create({
 });
 
 //app.set('views', `${__dirname}/views`);
-app.set('views', `${process.env.LAMBDA_TASK_ROOT}/src/views`);
+app.set('views', `${process.env.LAMBDA_TASK_ROOT}/views`);
 app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
 app.set('views', './src/views');
