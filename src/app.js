@@ -13,7 +13,8 @@ const hbs = exphbs.create({
   defaultLayout: 'main',
 });
 
-app.set('views', `${__dirname}/views`);
+//app.set('views', `${__dirname}/views`);
+app.set('views', `${process.env.LAMBDA_TASK_ROOT}/src/views`);
 app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
 app.set('views', './src/views');
