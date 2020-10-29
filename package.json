@@ -11,7 +11,7 @@
     "cy:run": "cypress run",
     "jest": "jest",
     "pre-build": "sh pre-build-script.sh",
-    "build": "#" //"netlify-lambda build src"
+    "build": "#" 
   },
   "repository": {
     "type": "git",
