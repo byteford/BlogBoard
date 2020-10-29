@@ -8,18 +8,6 @@ class Blog {
     this.Filename = filename;
   }
 
-  getTitle() {
-    return this.Title;
-  }
-
-  getSummary() {
-    return this.Summary;
-  }
-
-  getBody() {
-    return this.Body;
-  }
-
   async loadBlog() {
     try {
       const data = await fs.readFile(this.Filename);

@@ -17,7 +17,7 @@ pipeline{
         stage("UnitTest"){
             steps{
                 echo "========UNIT TEST========"
-                sh "npm run jest"
+                sh "npm run jest -- --coverage"
             }
         }
         stage("Pre build"){
