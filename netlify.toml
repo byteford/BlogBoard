@@ -1,3 +1,3 @@
 [build]
   command = "sh ./pre-build-script.sh && npm install && npm run build"
-  functions = "src"
+  functions = "functions"
