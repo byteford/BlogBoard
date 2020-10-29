@@ -9,6 +9,6 @@ describe('CI test for homepage', () => {
 
   it('should open the homepage and blog links should be displayed', () => {
     cy.visit(Cypress.env('HOST'));
-    cy.get('[href="/blog/milestones.txt"] > h2').should('have.text', 'Blog1');
+    cy.get('[href="/blog/milestones"] > h2').should('have.text', 'milestones');
   });
 });

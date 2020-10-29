@@ -20,6 +20,12 @@ pipeline{
                 sh "npm run jest -- --coverage"
             }
         }
+        stage("Cleen Up"){
+            steps{
+                echo "========Clean up========"
+                sh "rm -rf ${env.WORKSPACE}/node_modules"
+            }
+        }
         stage("Pre build"){
             steps{
                 echo "====Pre Build===="
