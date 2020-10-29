@@ -3,6 +3,7 @@ const express = require('express');
 const exphbs = require('express-handlebars');
 const path = require('path');
 const fs = require('fs');
+const serverless = require('serverless-http');
 const { Blog } = require('./blog');
 
 const app = express();
@@ -30,8 +31,10 @@ app.get('/blog/:filename', (req, res) => {
   });
 });
 
-app.listen(3000, () => {
-  /* eslint-disable no-console */
-  console.log('Listening on port 3000...');
-  /* eslint-enable no-console */
-});
+// app.listen(3000, () => {
+/* eslint-disable no-console */
+//  console.log('Listening on port 3000...');
+/* eslint-enable no-console */
+// });
+module.exports = app;
+module.exports.handler = serverless(app);
