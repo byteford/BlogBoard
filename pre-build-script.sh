@@ -20,4 +20,5 @@ do
   #  echo "${blogname} passed"
     echo ${blogname} >> blognames.txt
   #fi
+  ls
 done < "$input"
