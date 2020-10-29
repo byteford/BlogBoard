@@ -11,7 +11,7 @@
     "cy:run": "cypress run",
     "jest": "jest",
     "pre-build": "sh pre-build-script.sh",
-    "build": "netlify-lambda build src" 
+    "build": "netlify-lambda build src -c ./webpack.config.js"
   },
   "repository": {
     "type": "git",
@@ -24,11 +24,13 @@
   },
   "homepage": "https://github.com/byteford/BlogBoard#readme",
   "dependencies": {
+    "copy-webpack-plugin": "^5.0.5",
     "express": "^4.17.1",
     "express-handlebars": "^5.2.0",
     "handlebars": "^4.7.6",
     "nodemon": "^2.0.6",
-    "serverless-http": "^2.6.0"
+    "serverless-http": "^2.6.0",
+    "webpack": "^4.41.2"
   },
   "devDependencies": {
     "eslint": "^7.12.1",
