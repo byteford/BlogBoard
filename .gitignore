@@ -108,3 +108,6 @@ cypress/screenshots/
 cypress/videos
 
 functions
+
+# Local Netlify folder
+.netlify

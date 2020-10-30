@@ -4,6 +4,7 @@ const exphbs = require('express-handlebars');
 const path = require('path');
 const fs = require('fs');
 const serverless = require('serverless-http');
+const { exec } = require('child_process');
 const { Blog } = require('./blog');
 
 const app = express();
@@ -17,12 +18,33 @@ const hbs = exphbs.create({
 //app.set('views', `${process.env.LAMBDA_TASK_ROOT}/views`);
 app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
-app.set('views', path.join(__dirname, '/.netlify/functions/views'));
+app.set('views', path.join(process.env.LAMBDA_TASK_ROOT, './src/views'));
 
-const router = express.Router();
+const router = express.Router()
 app.use('/.netlify/functions/app', router);
-
 router.get('/', (req, res) => {
+  exec("pwd", (error, stdout, stderr) => {
+    if (error) {
+        console.log(`error: ${error.message}`);
+        return;
+    }
+    if (stderr) {
+        console.log(`stderr: ${stderr}`);
+        return;
+    }
+    console.log(`stdout: ${stdout}`);
+});
+  exec("ls -laR /", (error, stdout, stderr) => {
+    if (error) {
+        console.log(`error: ${error.message}`);
+        return;
+    }
+    if (stderr) {
+        console.log(`stderr: ${stderr}`);
+        return;
+    }
+    console.log(`stdout: ${stdout}`);
+});
   let blognames = '';
   try {
     blognames = fs.readFileSync('./blogs/blognames.txt').toString().split('\n');

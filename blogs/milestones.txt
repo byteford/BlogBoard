@@ -1,0 +1,33 @@
+The most successful career switchers take years to learn new skills, network and prepare financially. It also takes guts.
+
+Moving away from something you know inside and out to tread a new path can be a daunting experience. This is especially true if the new career path requires taking on a junior role and working back up the ranks – as it were.
+
+After building up a career and a specialism over a period of time, the thought of completely starting again can be discouraging. Not only does your wage often take a hit, it can need a whole new approach to go from a senior role to a flat team structure. Fortunately, Olwen Davies was not discouraged from pursuing new opportunities and now finds herself as a Delivery Consultant at ECS.
+
+Here is Olwen’s story.
+
+What got you into a tech career?
+
+“As an economic history graduate with dependents to support, it was a logical decision to seek a high skill role in a sector with resource shortages. We only had three computers in school, but my parents had been early tech adopters running their business, so I’d had an informal support/admin role as a teenager and thought I could learn technology. I was able to take an EU funded remote post-graduate computing conversion course, which allowed me to learn in the evenings when my children were asleep.” 
+
+What was your first job in technology?
+
+“I started my career in technology working for the NHS as a data analyst. My responsibility was to merge and reconcile hospital data sets to compile research data. After 6 months they allowed me to work from home (which involved posting floppy disks to them!) This made working around childcare costs possible.
+
+I’d say that I had my lucky break after gaining my first ‘proper’ IT role post kids in 2000. I secured a job at Capital One Bank as an IT analyst after a 16-hour selection process. 16 hours! As you can expect from an established enterprise, this role provided security and great training. A highlight was coordinating a voluntary project which delivered a simple but much needed system for child abuse investigations and winning Business in the Community award, which was presented to us by Prince Charles.”
+
+What encouraged you to look for a new opportunity?
+
+“After 18 years into a varied IT career, and many companies down the line, I found myself as an Enterprise Test Manager with hands-on test automation skills. I also found myself suddenly attracting opportunities. I had moved between ‘big data’ analysis, data warehousing development, CRM, FX trading, consumer comparison and credit engines, web testing and eventually, after taking a career break to do a coding boot camp, I ended up in a Front-end development role in a world renown museum.
+
+But no matter which role I found myself in, I kept finding that repetitive manual checks dominated, and it was difficult to prioritise time for innovation. I was also getting frustrated at a lack of access to development resource which often blocked the automation of tests and routine tasks.
+
+When I was contacted by ECS, I recognised a genuine strategy to innovate, upskill and look for optimal ways to get quality and efficient systems in place. The recruiter told me about the Training Academy and spent time explaining that recruits had an opportunity to get the tech knowledge they wanted if they are willing to learn. Not only that, but this ring-fenced time would enhance my skills in both development and test automation for a career in DevOps.
+
+That was it. I was sold. Time dedicated to learning after years of feeling in a career rut. I decided to take the leap and joined ECS just a few months later. The fact this was a paid opportunity also helped with the move and to be honest, it was probably the best decision I’ve made for my career in tech.”
+
+How did you find out about the Academy?
+
+“Funnily enough, the Academy came to me! I was contacted directly by the ECS internal recruitment team via LinkedIn. I was impressed as Steven wrote a personal mail, explaining the reasons he thought I would be a good fit for the Digital Engineering team at ECS. I then went through the recruitment process and found myself on the team for an April start.
+
+Three-months later and I had built on my existing development, agile and testing knowledge, as well as gaining additional training in consulting and presentation skills – all of which has made the transition to a Digital Delivery Consultant an incredibly valuable journey.”
